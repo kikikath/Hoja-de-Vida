@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,5pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -142,12 +142,13 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Shirley Katherine Maldonado} \\[6pt]
+{Analista de datos $|$ Cientifica de datos }\\[8pt]
+%\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
+\href{https://www.linkedin.com/in/katherine-maldonado-64424b205/}{\raisebox{-0.05\height}\faLinkedin\ Shirley Maldonado} \ $|$ \ 
+%\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
+\href{mailto:kathe.meza.27@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ kathe.meza.27@gmail.com} \ $|$ \ 
+\href{tel:+57 3209593820}{\raisebox{-0.05\height}\faMobile \ +57 3209593820}\ $|$ \ \href{tel:+57 3209593820}{\raisebox{-0.05\height}\faMobile \ +57 3249176840} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -155,61 +156,81 @@
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-\section{Summary}
-This CV can also be automatically compiled and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+\section{Perfil}
+Analista y científica de datos con formación en Astronomía, con experiencia práctica en el sector retail. He desarrollado modelos predictivos del NPS y análisis de reputación de marca cuyos resultados fueron adoptados por el equipo como marcos de priorización operativa. Manejo Python, R y SQL para extracción, transformación y modelado de datos, y Power BI para comunicación de resultados a audiencias de negocio. Mi enfoque combina solidez estadística con la capacidad de traducir hallazgos técnicos en decisiones accionables.
+\href{https://kikikath.github.io/Hoja-de-Vida/cv.pdf}{CV}
 
 %Experience
-\section{Work Experience}
+\section{Experiencia laboral}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
+\begin{joblong}{Practicante – Investigación de Mercado y Ciencia de Datos}{oct 2025 - mar 2026}
 
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+\item Desarrollé un modelo predictivo del NPS omnicanal utilizando Gradient Boosting (R² entre 0.63 y 0.79 en conjunto de prueba), identificando el cumplimiento en tiempos de entrega de producto como el principal driver de satisfacción y lealtad del cliente. Los resultados fueron presentados al equipo y adoptados como marco de priorización operativa.
+\item Ejecuté la optimización de la encuesta de experiencia del cliente mediante PCA y análisis de correlaciones, identificando ítems redundantes o con baja varianza (como Medios de pago disponibles y Conocimiento del personal) cuya eliminación reduce la carga de respuesta sin pérdida de poder explicativo (varianza explicada por Momento de Verdad: 75–85%).
+\item Diseñé un análisis de reputación de marca con regresión logística ordinal (en lugar del enfoque estándar por importancia de permutación) para cuantificar el impacto de cada variable sobre la confianza del consumidor. Esta elección metodológica, propuesta por mí y validada por el equipo, permitió obtener pesos directamente interpretables que se agregaron a nivel de driver y se tradujeron en un gráfico de desempeño vs. impacto coherente entre públicos y niveles de análisis.
+\item Analicé datos Nielsen para benchmarking competitivo y apoyé al equipo de Ciencia de Datos en métricas de percepción de marca.
 \end{joblong}
   
 %Projects
-\section{Projects}
+\section{Proyectos}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{Análisis de Series de Tiempo y Predicción del Valor de la Energía Eléctrica} & \hfill \href{https://some-link.com}{ene 2025} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Proyecto académico en equipo en donde procesamos datos históricos de XM, construimos modelos LSTM en TensorFlow/Keras para pronosticar el valor del kWh a corto y mediano plazo, y evaluamos el desempeño con métricas MAE y RMSE.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Diseño de Base de Datos para Gestión del Riesgo y Desastre en Antioquia} & \hfill \href{https://some-link.com}{may 2024} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Proyecto de cierre del Bootcamp Data Analytics de Betek, presentado en el Open House de la empresa ante audiencia externa. Diseñé el modelo relacional en MySQL, realicé el análisis exploratorio con Python y construí un tablero en Power BI con el histórico de desastres y zonas de riesgo del departamento de Antioquia.}  \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+\section{Educación}
+\begin{tabularx}{\linewidth}{@{}l X@{} l@{}}	
+mar 2019 - mar 2026 & Pregrado en Astronomía & \textbf{Universidad de Antioquia} \hfill \normalsize %(GPA: 4.0/4.0) \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\section{Educación complementaria}
+\begin{tabularx}{\linewidth}{@{}l X@{} l@{}}
+
+oct 2024 - dic 2024 & Curso Power BI y Visualización de Datos & 
+\textbf{Universidad de Antioquia} \hfill \normalsize \\
+
+nov 2023 - may 2024 & Bootcamp Data Analytics & \textbf{Betek} \hfill \normalsize \\
+
+nov 2023 - feb 2024 & Diplomado en Análisis de Datos y Machine Learning con Python & \textbf{Universidad de Antioquia} \hfill \normalsize \\
+
+nov 2022 - dic 2022 & Fundamentos en Analítica de Datos  & \textbf{DS4A} \hfill \normalsize \\
+
+\end{tabularx}
+
+
+\section{Idiomas}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Inglés & \normalsize{Avanzado}
+\end{tabularx}
+
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
+\section{Habilidades Técnicas}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Programación:  &  \normalsize{Python, R, SQL.}\\
+Machine learning:  &  \normalsize{ Histogram Gradient Boosting, Regresión logistica ordinal, Clasificación, Árboles de Decisión, LSTM.}\\  
+Métodos estadísticos:  &  \normalsize{PCA, Análisis de Correspondencias Múltiples (ACM), Algoritmo PC (descubrimiento
+causal).}\\
+Interpretabilidad:  &  \normalsize{SHAP, importancia por permutación.}\\
+Bases de Datos:  &  \normalsize{MySQL, SAS.}\\
+Visualización:  &  \normalsize{Power BI, Matplotlib, Seaborn, Qualtrics.}\\
 \end{tabularx}
+
 
 \vfill
 \center{\footnotesize Last updated: \today}
