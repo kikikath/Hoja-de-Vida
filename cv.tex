@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,5pt]{article}
+\documentclass[a4paper, 10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -54,7 +54,7 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.914]{geometry}
 
 %tabularx environment
 \usepackage{tabularx}
@@ -78,7 +78,7 @@
 
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\section}{\Large\scshape\raggedright}{}{1em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
@@ -111,10 +111,10 @@
 \newenvironment{joblong}[2]
     {
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \textbf{#1} & \hfill &  #2 \\[3pt]
     \end{tabularx}
     \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=5pt,label=--]
     }
     {
     \end{itemize}
@@ -142,8 +142,8 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Shirley Katherine Maldonado} \\[6pt]
-{Analista de datos $|$ Cientifica de datos }\\[8pt]
+\Huge{Shirley Katherine Maldonado} \\[3pt]
+{Analista de datos $|$ Cientifica de datos }\\[2pt]
 %\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
 \href{https://www.linkedin.com/in/katherine-maldonado-64424b205/}{\raisebox{-0.05\height}\faLinkedin\ Shirley Maldonado} \ $|$ \ 
 %\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
@@ -157,16 +157,29 @@
 
 %Interests/ Keywords/ Summary
 \section{Perfil}
-Analista y científica de datos con formación en Astronomía, con experiencia práctica en el sector retail. He desarrollado modelos predictivos del NPS y análisis de reputación de marca cuyos resultados fueron adoptados por el equipo como marcos de priorización operativa. Manejo Python, R, SQL y Excel para extracción, transformación y modelado de datos, y Power BI para comunicación de resultados a audiencias de negocio. Mi enfoque combina solidez estadística con la capacidad de traducir hallazgos técnicos en decisiones accionables.
-\href{https://kikikath.github.io/Hoja-de-Vida/cv.pdf}{CV}
+Analista y científica de datos con formación en Astronomía, con experiencia práctica en el sector retail y nivel C1 de inglés. Manejo Python principalmente, R, SQL y Excel para la extracción, transformación y el modelado de datos, y Power BI para comunicación de resultados a audiencias de negocio. Mi enfoque combina solidez estadística con la capacidad de traducir hallazgos técnicos en decisiones accionables.
+\href{https://kikikath.github.io/Hoja-de-Vida/cv.pdf}{Link para descargar}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Habilidades Técnicas}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Programación:  &  \normalsize{Python, R, SQL.}\\
+Bases de Datos:  &  \normalsize{MySQL, SAS.}\\
+Visualización:  &  \normalsize{Power BI, Matplotlib, Seaborn, Qualtrics.}\\
+Librerías: &  \normalsize{Pandas, NumPy, scikit-learn, TensorFlow, Keras, Matplotlib, seaborn}\\
+Machine learning:  &  \normalsize{Histogram Gradient Boosting, Regresión, Clasificación, Árboles de Decisión, SHAP values, importancia por permutación para interpretabilidad.}\\  
+Métodos estadísticos:  &  \normalsize{PCA, Análisis de Correspondencias Múltiples (ACM), descubrimiento causal)}\\
+\end{tabularx}
 
 %Experience
 \section{Experiencia laboral}
 
-\begin{joblong}{Practicante – Investigación de Mercado y Ciencia de Datos}{oct 2025 - mar 2026}
+\begin{joblong}{Practicante de Investigación de Mercado y Ciencia de Datos}{Grupo Éxito}
 
 \item Desarrollé un modelo predictivo del NPS omnicanal utilizando Gradient Boosting (R² entre 0.63 y 0.79 en conjunto de prueba), identificando el cumplimiento en tiempos de entrega de producto como el principal driver de satisfacción y lealtad del cliente. Los resultados fueron presentados al equipo y adoptados como marco de priorización operativa.
-\item Ejecuté la optimización de la encuesta de experiencia del cliente mediante PCA y análisis de correlaciones, identificando ítems redundantes o con baja varianza (como Medios de pago disponibles y Conocimiento del personal) cuya eliminación reduce la carga de respuesta sin pérdida de poder explicativo (varianza explicada por Momento de Verdad: 75–85%).
+\item Ejecuté la optimización de la encuesta de experiencia del cliente mediante PCA y análisis de correlaciones, identificando ítems redundantes o con baja varianza (como Medios de pago disponibles y Conocimiento del personal) cuya eliminación reduce la carga de respuesta sin pérdida de poder explicativo (varianza explicada por Momento de Verdad: $75–85\%$).
 \item Diseñé un análisis de reputación de marca con regresión logística ordinal (en lugar del enfoque estándar por importancia de permutación) para cuantificar el impacto de cada variable sobre la confianza del consumidor. Esta elección metodológica, propuesta por mí y validada por el equipo, permitió obtener pesos directamente interpretables que se agregaron a nivel de driver y se tradujeron en un gráfico de desempeño vs. impacto coherente entre públicos y niveles de análisis.
 \item Analicé datos Nielsen para benchmarking competitivo y apoyé al equipo de Ciencia de Datos en métricas de percepción de marca.
 \end{joblong}
@@ -175,12 +188,12 @@ Analista y científica de datos con formación en Astronomía, con experiencia p
 \section{Proyectos}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Análisis de Series de Tiempo y Predicción del Valor de la Energía Eléctrica} & \hfill \href{https://some-link.com}{ene 2025} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Proyecto académico en equipo en donde procesamos datos históricos de XM, construimos modelos LSTM en TensorFlow/Keras para pronosticar el valor del kWh a corto y mediano plazo, y evaluamos el desempeño con métricas MAE y RMSE.}  \\
+\textbf{Análisis de Series de Tiempo y Predicción del Valor de la Energía Eléctrica} & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Proyecto académico en equipo en donde procesamos datos históricos de XM, construimos modelos LSTM en TensorFlow/Keras para pronosticar el valor del kWh a corto y mediano plazo.}  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Diseño de Base de Datos para Gestión del Riesgo y Desastre en Antioquia} & \hfill \href{https://some-link.com}{may 2024} \\[3.75pt]
+\textbf{Diseño de Base de Datos para Gestión del Riesgo y Desastre en Antioquia} & \hfill \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{Proyecto de cierre del Bootcamp Data Analytics de Betek, presentado en el Open House de la empresa ante audiencia externa. Diseñé el modelo relacional en MySQL, realicé el análisis exploratorio con Python y construí un tablero en Power BI con el histórico de desastres y zonas de riesgo del departamento de Antioquia.}  \\
 \end{tabularx}
 
@@ -207,32 +220,8 @@ nov 2023 - may 2024 & Bootcamp Data Analytics & \textbf{Betek} \hfill \normalsiz
 nov 2023 - feb 2024 & Diplomado en Análisis de Datos y Machine Learning con Python & \textbf{Universidad de Antioquia} \hfill \normalsize \\
 
 nov 2022 - dic 2022 & Fundamentos en Analítica de Datos  & \textbf{DS4A} \hfill \normalsize \\
-
 \end{tabularx}
 
-
-\section{Idiomas}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Inglés & \normalsize{Avanzado}
-\end{tabularx}
-
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Habilidades Técnicas}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Programación:  &  \normalsize{Python, R, SQL.}\\
-Machine learning:  &  \normalsize{ Histogram Gradient Boosting, Regresión logistica ordinal, Clasificación, Árboles de Decisión, LSTM.}\\  
-Métodos estadísticos:  &  \normalsize{PCA, Análisis de Correspondencias Múltiples (ACM), Algoritmo PC (descubrimiento
-causal).}\\
-Interpretabilidad:  &  \normalsize{SHAP, importancia por permutación.}\\
-Bases de Datos:  &  \normalsize{MySQL, Excel y SAS.}\\
-Visualización:  &  \normalsize{Power BI, Matplotlib, Seaborn, Qualtrics.}\\
-\end{tabularx}
-
-
-\vfill
 \center{\footnotesize Last updated: \today}
 
 \end{document}
